@@ -417,10 +417,14 @@
             background: var(--color-card-bg);
             border: 1px solid var(--color-border);
             border-radius: var(--radius-xl);
-            padding: var(--spacing-lg);
+            padding: var(--spacing-md);
+            /* Reduced from lg */
             transition: all var(--transition-base);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .city-card::before {
@@ -447,11 +451,13 @@
         }
 
         .city-card__header {
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            /* Reduced from md */
         }
 
         .city-card__title {
-            font-size: var(--font-size-2xl);
+            font-size: var(--font-size-xl);
+            /* Reduced from 2xl */
             font-weight: 700;
             color: var(--color-white);
             margin-bottom: var(--spacing-xs);
@@ -462,7 +468,8 @@
             font-size: var(--font-size-sm);
             color: var(--color-gold);
             background: rgba(255, 215, 0, 0.1);
-            padding: var(--spacing-xs) var(--spacing-sm);
+            padding: 4px 8px;
+            /* Fixed small padding */
             border-radius: var(--radius-sm);
             font-weight: 600;
         }
@@ -470,12 +477,17 @@
         .city-card__description {
             color: var(--color-text-muted);
             font-size: var(--font-size-base);
-            line-height: 1.7;
+            line-height: 1.5;
+            /* Tightened line height */
             margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+            /* Ensure buttons align */
         }
 
         .city-card__btn {
             width: 100%;
+            padding: var(--spacing-sm);
+            /* Smaller button padding */
         }
 
         /* ===================================
