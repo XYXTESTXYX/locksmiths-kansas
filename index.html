@@ -22,23 +22,26 @@
    =================================== */
         :root {
             /* Colors */
-            --color-primary: #1a1a2e;
-            --color-secondary: #16213e;
-            --color-accent: #f4a261;
-            --color-gold: #ffd700;
-            --color-gold-dark: #daa520;
-            --color-text: #e8e8e8;
-            --color-text-muted: #a0a0a0;
+            --color-primary: #111827;
+            --color-secondary: #1f2937;
+            --color-accent: #f59e0b;
+            --color-gold: #fbbf24;
+            --color-gold-dark: #d97706;
+            --color-text: #374151;
+            /* Dark gray for text */
+            --color-text-muted: #6b7280;
             --color-white: #ffffff;
-            --color-black: #0a0a0a;
-            --color-dark-bg: #0f0f1e;
-            --color-card-bg: #1f1f3a;
-            --color-border: rgba(255, 215, 0, 0.1);
+            --color-black: #000000;
+            --color-dark-bg: #ffffff;
+            /* White background */
+            --color-card-bg: #f9fafb;
+            /* Very light gray card */
+            --color-border: #e5e7eb;
 
             /* Gradients */
-            --gradient-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            --gradient-gold: linear-gradient(135deg, #ffd700 0%, #f4a261 100%);
-            --gradient-overlay: linear-gradient(180deg, rgba(10, 10, 30, 0.7) 0%, rgba(10, 10, 30, 0.9) 100%);
+            --gradient-primary: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            --gradient-overlay: linear-gradient(180deg, rgba(17, 24, 39, 0.6) 0%, rgba(17, 24, 39, 0.8) 100%);
 
             /* Spacing */
             --spacing-xs: 0.5rem;
@@ -70,9 +73,9 @@
             /* Shadows */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
-            --shadow-gold: 0 0 20px rgba(255, 215, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --shadow-gold: 0 4px 14px 0 rgba(251, 191, 36, 0.39);
 
             /* Transitions */
             --transition-fast: 150ms ease-in-out;
@@ -154,12 +157,13 @@
         .section-header__title {
             font-size: var(--font-size-4xl);
             font-weight: 800;
-            color: var(--color-white);
+            color: var(--color-primary);
+            /* Changed to dark */
             margin-bottom: var(--spacing-md);
-            background: var(--gradient-gold);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: none;
+            /* Removed gradient text for cleaner look */
+            -webkit-text-fill-color: initial;
+            background-clip: border-box;
         }
 
         .section-header__subtitle {
@@ -459,7 +463,8 @@
             font-size: var(--font-size-xl);
             /* Reduced from 2xl */
             font-weight: 700;
-            color: var(--color-white);
+            color: var(--color-primary);
+            /* Dark text */
             margin-bottom: var(--spacing-xs);
         }
 
@@ -564,7 +569,8 @@
         .service-card__title {
             font-size: var(--font-size-xl);
             font-weight: 700;
-            color: var(--color-white);
+            color: var(--color-primary);
+            /* Dark text */
             margin-bottom: var(--spacing-sm);
             position: relative;
             z-index: 1;
@@ -620,7 +626,8 @@
         .feature-card__title {
             font-size: var(--font-size-xl);
             font-weight: 700;
-            color: var(--color-white);
+            color: var(--color-primary);
+            /* Dark text */
             margin-bottom: var(--spacing-sm);
         }
 
@@ -663,7 +670,8 @@
             padding: var(--spacing-md) var(--spacing-lg);
             font-size: var(--font-size-lg);
             font-weight: 600;
-            color: var(--color-white);
+            color: var(--color-primary);
+            /* Dark text */
             text-align: left;
             transition: all var(--transition-base);
         }
