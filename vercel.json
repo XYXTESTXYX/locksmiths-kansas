@@ -1,0 +1,87 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.html",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/wichita/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/overland-park/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/kansas-city/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/topeka/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/olathe/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/lawrence/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/shawnee/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/lenexa/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/manhattan/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/salina/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/hutchinson/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/leavenworth/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/leawood/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/garden-city/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/emporia/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/derby/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/pittsburg/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/junction-city/?",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
+    ]
+}

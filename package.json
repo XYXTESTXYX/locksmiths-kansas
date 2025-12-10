@@ -1,0 +1,23 @@
+{
+    "name": "locksmiths-kansas",
+    "version": "1.0.0",
+    "description": "Professional 24/7 emergency locksmith landing page for Kansas statewide service",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx serve .",
+        "start": "npx serve .",
+        "deploy": "vercel --prod"
+    },
+    "keywords": [
+        "locksmith",
+        "kansas",
+        "emergency",
+        "landing-page",
+        "24/7"
+    ],
+    "author": "LocksmithsKansas.com",
+    "license": "MIT",
+    "devDependencies": {
+        "serve": "^14.2.1"
+    }
+}
